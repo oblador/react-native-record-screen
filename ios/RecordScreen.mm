@@ -1,6 +1,10 @@
 #import "RecordScreen.h"
 #import <React/RCTConvert.h>
 
+#ifdef RCT_NEW_ARCH_ENABLED
+#import "RecordScreenSpec.h"
+#endif
+
 @implementation RecordScreen
 
 UIBackgroundTaskIdentifier _backgroundRenderingID;
